@@ -1,0 +1,129 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: #162938;
+    -webkit-box-shadow: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+body {
+    background-image: url("/imgs/night_jungle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form_container {
+    width: 100%;
+    padding: 40px;
+
+}
+
+.form_container h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input_container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input_container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input_container input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input_container .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+.input_container input:focus~label,
+.input_container input:valid~label,
+.input_container input:active~label,
+.input_container input:autofill~label {
+    top: -5px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.register a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

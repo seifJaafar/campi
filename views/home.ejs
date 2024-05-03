@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Campi</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="/campgrounds">Campgrounds</a>
+        </nav>
+        <nav class="connection">
+            <% if(! currentUser) {%>
+                <a href="/login" class="nav-link">Login</a>
+                <a href="/register" class="nav-link">Sign up</a>
+                <% } else{%>
+                    <a href="/logout" class="nav-link">Logout</a>
+                    <% } %>
+        </nav>
+    </header>
+    <main>
+        <section class="parallax">
+            <div class="parallax_text">
+                <h2>Time for</h2>
+                <h1>Camping</h1>
+            </div>
+            <img src="imgs/parallax/background.png" alt="" class="parallax bg-img">
+            <img src="imgs/parallax/mountains.png" alt="" class="parallax mountains">
+            <img src="imgs/parallax/level 1.png" alt="" class="parallax level1">
+            <img src="imgs/parallax/trees left.png" class="parallax trees_left" alt="">
+            <img src="imgs/parallax/trees right.png" class="parallax trees_right" alt="">
+        </section>
+        <section class="services">
+            <h2>What we offer</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aliquid beatae deserunt suscipit ad facilis
+                ipsum veniam facere quaerat odit expedita deleniti, nobis eum mollitia nostrum in omnis corrupti quia
+                vel fugit rem delectus. Nisi, delectus labore laudantium necessitatibus eum officiis quod eaque nihil
+                iure. Sed excepturi quae praesentium officiis quaerat laboriosam quidem maiores necessitatibus aliquid
+                assumenda odit labore perferendis molestias omnis, soluta architecto asperiores? Illum reprehenderit
+                dignissimos minus laborum rem incidunt similique blanditiis asperiores ea odit ipsam assumenda, aperiam
+                vel velit expedita laboriosam, ab quidem qui! Provident qui maiores, expedita placeat eum optio
+                perspiciatis dignissimos eius tempora nam voluptas incidunt voluptatum, dolorum nisi deserunt quibusdam,
+                nobis id earum quam suscipit amet nesciunt. Aliquid eos similique omnis dolorem maiores adipisci sint
+                nesciunt doloremque, repudiandae et assumenda animi nemo vitae!<br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aliquid beatae deserunt suscipit ad
+                facilis
+                ipsum veniam facere quaerat odit expedita deleniti, nobis eum mollitia nostrum in omnis corrupti quia
+                vel fugit rem delectus. Nisi, delectus labore laudantium necessitatibus eum officiis quod eaque nihil
+                iure. Sed excepturi quae praesentium officiis quaerat laboriosam quidem maiores necessitatibus aliquid
+                assumenda odit labore perferendis molestias omnis, soluta architecto asperiores? Illum reprehenderit
+                dignissimos minus laborum rem incidunt similique blanditiis asperiores ea odit ipsam assumenda, aperiam
+                vel velit expedita laboriosam, ab quidem qui! Provident qui maiores, expedita placeat eum optio
+                perspiciatis dignissimos eius tempora nam voluptas incidunt voluptatum, dolorum nisi deserunt quibusdam,
+                nobis id earum quam suscipit amet nesciunt. Aliquid eos similique omnis dolorem maiores adipisci sint
+                nesciunt doloremque, repudiandae et assumenda animi nemo vitae!<br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aliquid beatae deserunt suscipit ad
+                facilis
+                ipsum veniam facere quaerat odit expedita deleniti, nobis eum mollitia nostrum in omnis corrupti quia
+                vel fugit rem delectus. Nisi, delectus labore laudantium necessitatibus eum officiis quod eaque nihil
+                iure. Sed excepturi quae praesentium officiis quaerat laboriosam quidem maiores necessitatibus aliquid
+                assumenda odit labore perferendis molestias omnis, soluta architecto asperiores? Illum reprehenderit
+                dignissimos minus laborum rem incidunt similique blanditiis asperiores ea odit ipsam assumenda, aperiam
+                vel velit expedita laboriosam, ab quidem qui! Provident qui maiores, expedita placeat eum optio
+                perspiciatis dignissimos eius tempora nam voluptas incidunt voluptatum, dolorum nisi deserunt quibusdam,
+                nobis id earum quam suscipit amet nesciunt. Aliquid eos similique omnis dolorem maiores adipisci sint
+                nesciunt doloremque, repudiandae et assumenda animi nemo vitae!<br><br></p>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
